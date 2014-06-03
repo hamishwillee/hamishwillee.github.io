@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+Congratulations! You've made it to {{site.title}}, my website and blog.
+
+I'm a community manager and technical author. For the last few years I've been privileged to support the global Nokia Developer community to create great community blah blah
+
+There should be line spaces at various points 
+
+
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

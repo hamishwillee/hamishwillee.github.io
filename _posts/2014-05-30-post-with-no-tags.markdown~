@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Test Post with no tags"
+date:   2014-05-30 20:55:32
+
+---
+
+This is a test post to demonstrate that my tag code works OK even if a post has no tags. All good fun. I think that I could get to like jekyll.
+
+
+
+<h4>Navpages</h4>
+
+<ul>{% for navpage in site.navbarorder %}
+  <li> <a href="{{ navpage.url | prepend: site.baseurl }}">{{ navpage.title }}</a> </li>
+{% endfor %}
+</ul>
+
+
+<h4>Allpages</h4>
+<ul>{% for page in site.pages %}
+  <li> <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> </li>
+{% endfor %}
+</ul>
+
+
+
+* Site.url : {{ site.url }}
+* sitebaseurl: {{ site.baseurl }}
+

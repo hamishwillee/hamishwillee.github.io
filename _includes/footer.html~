@@ -1,11 +1,11 @@
 <footer class="site-footer">
 
 <div class="wrap">
-<a href="https://twitter.com/{{ site.username }}" title="Twitter feed"><img alt="Twitter" src="/images/Twitter_logo_blue.png" width="16px"></img></a>
-<a href="https://github.com/{{ site.username }}" title="Github page"><img alt="Github" src="/images/GitHub-Mark-32px.png" width="16px"></img></a>
+<a href="https://twitter.com/{{ site.username }}" title="View me on Twitter"><img alt="Twitter" src="/images/Twitter_logo_blue.png" width="16px"></img></a>
+<a href="https://github.com/{{ site.username }}" title="View my Github page"><img alt="Github" src="/images/GitHub-Mark-32px.png" width="16px"></img></a>
 <a href="https://plus.google.com/103662188789853792412/posts"><img alt="Google+" src="/images/googleplus_icon.png" width="16px"></img></a>
-<a href="http://au.linkedin.com/in/hamishwillee" title="Linkedin profile"><img alt="Linkedin" src="/images/Linkedin-InBug-16px_0.png" width="16px"></img></a>
-<a href="/feed.xml" title="RSS feed"><img alt="rss" src="/images/rss.png" width="16px"></img></a>
+<a href="http://au.linkedin.com/in/hamishwillee"><img alt="Linkedin" src="/images/Linkedin-InBug-16px_0.png" width="16px"></img></a>
+<a href="/feed.xml"><img alt="rss" src="/images/rss.png" width="16px"></img></a>
 <a href="mailto:{{ site.email }}?Subject={{'About page: ' | UrlEncode }}{{ page.title | UrlEncode }}&body={{'URL: '| UrlEncode }}{{site.url }}{{ page.url }}" title="Email me"><img alt="email" src="/images/email-icon.png" width="16px"></img></a>
 <a href="{{ site.bugreports }}?title={{'Bug in page: ' | UrlEncode }}{{ page.title | UrlEncode }}&body={{'REPLACE THIS TEXT WITH BUG DESCRIPTION %0A%0AURL: '| UrlEncode }}{{site.url }}{{ page.url }}&labels=bug" title="Report bug in page"><img alt="email" src="/images/bug-icon.png" width="16px"></a>
 <div class="copyright">{{ site.copyright }}</div>

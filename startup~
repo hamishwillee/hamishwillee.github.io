@@ -1,0 +1,2 @@
+jekyll build --source ../mygitrepo/hamishwile.github.io --destination .
+jekyll server

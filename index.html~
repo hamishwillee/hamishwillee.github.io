@@ -7,7 +7,7 @@ layout: default
 
 <p>Congratulations, you've made it to <i>{{site.title}}</i>, my website and <a href="{{ site.baseurl }}/blogs">blog</a>.</p>
 
-<p>I'm an <a href="{{ site.baseurl }}/about">experienced developer community manager and technical writer</a>, with a passion for enabling great community authored content. The blog will share my thoughts about API documentation, tools, community, and more. Commenting is enabled, and I welcome your advice and feedback.</p>
+<p>I'm an <a href="{{ site.baseurl }}/about">experienced developer community manager and technical writer</a>, with a particular passion for enabling great community authored content. The blog will share my thoughts about API documentation, tools, community, and more. Commenting is enabled, and I welcome your advice and feedback.</p>
 
 <p>You can find out more about me in the <a href="{{ site.baseurl }}/about">about page</a>, or <a href="{{ site.baseurl }}/about/#contact-me">get in contact</a> to discuss community or writing opportunities.</p>
 

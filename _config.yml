@@ -1,9 +1,24 @@
 # Site settings
-title: Under Construction
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: Hamish Willee @ Community
+email: hamishwillee@gmail.com
+username: hamishwillee
+description: "Write an awesome description for your site in _config.yml. Appears in document head meta for google search."
 baseurl: ""
 url: "http://hamishwillee.github.io"
+copyright: © 2014 Jenosam Pty Ltd. All Rights Reserved.
+bugreports: https://github.com/hamishwillee/hamishwillee.github.io/issues/new
+
+navbarorder:
+ - title: Home
+   url: /
+ - title: About
+   url: /about/
+ - title: Blogs
+   url: /blog/
+ - title: Twitter
+   url: http://twitter.com/hamishwillee
+
+
 
 # Build settings
 markdown: kramdown
