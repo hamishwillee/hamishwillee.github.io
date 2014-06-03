@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hamish Willee is an experienced developer community manager and technical author.a
+Hamish Willee is an experienced developer community manager and technical author.
 
 <img class="floatright" alt="Hamish Willee" src="http://avatars0.githubusercontent.com/u/5368500?s=220" />
 
