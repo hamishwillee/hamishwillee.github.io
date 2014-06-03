@@ -7,7 +7,7 @@ tags:
 ---
 
 
-Welcome to my brand-spanking-new [Jekyll-powered](http://jekyllrb.com/) blog, hosted for *free* on [github pages](https://pages.github.com/). After years of blogging on company blogs, I've decided it is time I had my own place to talk more generally about communities, writing, and anything else that interests me. 
+Welcome to my brand-spanking-new [Jekyll-powered](http://jekyllrb.com/) blog, hosted for *free* on [Github pages](https://pages.github.com/). After years of blogging on company blogs, I've decided it is time I had my own place to talk more generally about communities, writing, and anything else that interests me. 
 
 The main reason I've considered Jekyll for the blog (rather than WordPress), is that it will be used for the documentation platform in an upcoming technical writing job. Creating a blog has been a very good way to get up and running quickly! It has also been a good way to get familiar with [Liquid](http://docs.shopify.com/themes/liquid-basics), and to refresh my CSS and JavaScript. 
 
@@ -40,7 +40,7 @@ Having created my blog I'd say that the biggest disadvantage is that you do need
 * You're responsible for your own backup. Storing your site on a Github repository is a good solution. 
 * Blog text is not spell-checked or grammar-checked by default using gedit on Ubuntu. Note to self - find a good spell checker!
 
-Some of the problems above have been reduced by frameworks like [Octopress](http://octopress.org/), which have support for themeing and a community of theme-creators. 
+Some of the problems above have been reduced by frameworks like [Octopress](http://octopress.org/), which have support for theming and a community of theme-creators. 
 
 # Brief overview of the options
 
@@ -50,7 +50,7 @@ Some of the problems above have been reduced by frameworks like [Octopress](http
 This is the approach I used! 
 
 The [Jekyll QuickStart](http://jekyllrb.com/docs/quickstart/) shows how to create your own default blog using the 'Jekyll new' command and start a local server to browse it. 
-The main problem with this default blog is that it is missing many of the features you would commonly expect: *social widgets*, *tags*, *search*, *anayltics*, and most importantly, the ability to add *comments*. While the CSS does have basic support for mobile layouts, and is simple enough to understand, this is not a particularly inspiring theme.
+The main problem with this default blog is that it is missing many of the features you would commonly expect: *social widgets*, *tags*, *search*, *analytics*, and most importantly, the ability to add *comments*. While the CSS does have basic support for mobile layouts, and is simple enough to understand, this is not a particularly inspiring theme.
 
 In my opinion you can choose not to enable comments (though these are possibly the [easiest feature to add](http://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions)) but social plugins are a necessity. Adding all the features took me much longer to set up than [the single day suggested in this article](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/), mostly because I spent so long modifying the CSS to get additional features to lay out the way I wanted.
 
