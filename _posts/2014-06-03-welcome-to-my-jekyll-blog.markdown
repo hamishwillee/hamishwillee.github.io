@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Welcome to my Jekyll blog"
-date:   2014-06-03 20:44:31
 tags:
 - jekyll
 ---
@@ -60,6 +59,7 @@ In my opinion you can choose not to enable comments (though these are possibly t
 * [Jekyll From Scratch - Extending Jekyll](http://pixelcog.com/blog/2013/jekyll-from-scratch-extending-jekyll/)
 * [How I built my blog in one day](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/)
 * [How I Created a Beautiful and Minimal Blog Using Jekyll, Github Pages, and poole](http://joshualande.com/jekyll-github-pages-poole/)
+* [Fast mobile friendly website with jekyll](http://nicolashery.com/fast-mobile-friendly-website-with-jekyll)
 * [Building static sites with Jekyll](http://code.tutsplus.com/articles/building-static-sites-with-jekyll--net-22211)
 * [Sites using Jekyll](http://jekyllrb.com/docs/sites/)
 * [jekyllthemes.org](http://jekyllthemes.org/)
