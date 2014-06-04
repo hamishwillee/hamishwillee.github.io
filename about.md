@@ -6,7 +6,7 @@ permalink: /about/
 
 Hamish Willee is an experienced developer community manager and technical author.
 
-<img class="floatright" alt="Hamish Willee" src="http://avatars0.githubusercontent.com/u/5368500?s=220" />
+<img class="floatright" alt="Hamish Willee" src="/images/HamishImage.jpg" width="220px"/>
 
 As community manager for the [Nokia Developer global community website](http://developer.nokia.com/community/wiki/Wiki_Home) (and earlier with the Symbian Foundation) Hamish created a welcoming, supportive and effective developer community. He was responsible for community strategic planning, improving infrastructure and processes, enabling easier technical contribution and collaboration, aligning community activities around Nokia's developer products and platforms, reporting on community health, advising internal teams on how to work better with the community, and demonstrating the value of the community investment within Nokia. 
 

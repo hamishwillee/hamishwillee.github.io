@@ -1,2 +1,18 @@
 jekyll build --source ../mygitrepo/hamishwile.github.io --destination .
 jekyll server
+
+
+git add --all
+git commit -m "your comment"
+git push
+
+
+<!-- Text for getting page lists -->
+<!--
+        {% for page in site.pages %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endfor %}
+-->        
+
+http://nicolashery.com/fast-mobile-friendly-website-with-jekyll
+

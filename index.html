@@ -1,9 +1,7 @@
 ---
 layout: default
+title: Home
 ---
-
-<div class="home">
-
 
 <p>Congratulations, you've made it to <i>{{site.title}}</i>, my website and <a href="{{ site.baseurl }}/blog">blog</a>.</p>
 
@@ -17,13 +15,11 @@ layout: default
   <h2>Latest from the blog</h2> 
 
 {% for post in site.posts limit:5 %}
-      <div class="postblock">
-<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="post-date"> - {{ post.date | date: "%b %-d, %Y" }}</span>
+      <div class="post-block">
+<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="small-post-date"> - {{ post.date | date: "%b %-d, %Y" }}</span>
 {% if post.tags != empty %} <div class="tag-icon-image"> {% for tag in post.tags %} <div class="tag-link"><a href="{{ site.baseurl }}/tags#{{ tag }}&tag={{ tag | uri_escape }}">{{ tag }}</a></div> {% endfor %}</div>{% endif %} 
-<div class="excerpt">{{ post.excerpt }}</div>
+<div class="post-excerpt">{{ post.excerpt }}</div>
 </div> {% endfor %}
 
-
-</div>
 
 </div>

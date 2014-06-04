@@ -1,25 +1,46 @@
-# Site settings
-title: Hamish Willee @ Community
-email: hamishwillee@gmail.com
-username: hamishwillee
-description: "Write an awesome description for your site in _config.yml. Appears in document head meta for google search."
-baseurl: ""
-url: "http://hamishwillee.github.io"
-copyright: © 2014 Jenosam Pty Ltd. All Rights Reserved.
-bugreports: https://github.com/hamishwillee/hamishwillee.github.io/issues/new
-
-navbarorder:
- - title: Home
-   url: /
- - title: About
-   url: /about/
- - title: Blogs
-   url: /blog/
- - title: Twitter
-   url: http://twitter.com/hamishwillee
-
-
-
 # Build settings
 markdown: kramdown
+highlighter: pygments
 permalink: pretty
+
+# Setup
+title:            Hamish Willee @ Community
+copyright: © 2014 Jenosam Pty Ltd. All Rights Reserved.
+
+url:              http://hamishwillee.github.io
+paginate:         1
+baseurl:          
+author:
+  name:           Hamish Willee
+  url:            https://twitter.com/hamishwillee
+  email:          hamishwillee@gmail.com
+username: hamishwillee
+description: "Blog discussing Jekyll, online Community management, developers, and API documentation."
+bugreports: https://github.com/hamishwillee/hamishwillee.github.io/issues/new
+
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/hamishwillee/hamishwillee.github.io
+
+
+
+pages_list:       
+  About: '/about'
+  Blogs: '/blog/'
+  Twitter: 'http://twitter.com/hamishwillee'
+  Feed: '/rss.xml'
+
+
+# Site settings - to be integrated
+
+
+
+beer: relatedpostsdisabled, but could perhaps do something with tags.
+
+# Deprecated
+# tagline:          ""
+
+
+
