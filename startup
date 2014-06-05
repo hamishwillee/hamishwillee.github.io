@@ -7,6 +7,9 @@ git commit -m "your comment"
 git push
 
 
+git reset --hard master
+
+
 <!-- Text for getting page lists -->
 <!--
         {% for page in site.pages %}
@@ -15,4 +18,8 @@ git push
 -->        
 
 http://nicolashery.com/fast-mobile-friendly-website-with-jekyll
+
+
+
+
 

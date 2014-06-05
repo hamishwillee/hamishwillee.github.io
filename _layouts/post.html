@@ -5,6 +5,7 @@ layout: default
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}&nbsp;{% if page.tags != empty %} <div class="tag-icon-image"> {% for tag in page.tags %} <div class="tag-link"><a href="{{ site.baseurl }}/tags#{{ tag }}&tag={{ tag | uri_escape }}">{{ tag }}</a></div> {% endfor %}</div>{% endif %}</span><div class="floatright"><a href="https://twitter.com/share" class="twitter-share-button" data-via="hamishwillee">Tweet</a><div class="g-plusone" data-size="medium" data-annotation="bubble" data-width="120"></div></div>
+  {% if page.tags contains 'draft' %}<div class="message">DRAFT - This blog post is <b>under construction</b>.</div> {% endif %}
   {{ content }}
 </div>
   <!-- add commenting -->
@@ -33,3 +34,6 @@ layout: default
 </div>
 
 -->
+
+
+
