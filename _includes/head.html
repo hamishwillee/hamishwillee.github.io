@@ -4,7 +4,7 @@
 
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
   <title>
     {% if page.title == "Home" %}
@@ -25,3 +25,6 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml">
 </head>
+
+
+    

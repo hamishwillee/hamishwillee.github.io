@@ -64,6 +64,18 @@ Globally I added a navbar, analytics, search bar, and a bottom bar with links to
 
 It took more than [the single day suggested in this article](http://erjjones.github.io/blog/How-I-built-my-blog-in-one-day/), mostly because I spent so long modifying the CSS to get additional features to lay out the way I wanted. I am very happy with the results!
 
+# Blogging with Github Pages - automatic vs. offline Jekyll
+
+[Github Pages](http://pages.github.com) is a great (free) place to publish a Jekyll blog. Pages placed in your correctly named repostory (/*username*/*username*.github.io) are automatically published to the site *username.github.io*. Even better, Github runs Jekyll automatically on content in the respository, so your pages can be a Jekyll project.
+
+The caveat here is that Github runs Jekyll in a "safe mode" (see [Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages)) which runs only a small set of default plugins. This means that if your project depends on any custom plugins, they will not be run. In this case you can still use Jekyll, but you will need to have a separate repository for your sources, build them using your own copy of Jekyll, and then upload the final output to your publishing respository.
+
+Plugins can be extemely useful. They can provide easier syntax for declaring special markup (for example, custom markup for adding "Notes" or support for embedding videos easily) and support features that would otherwise be hard on a static site (for example creating separate index pages for post tags). Popular Jekyll-based frameworks like Octopress use plugins to make the blogging process easier, so if you want to use them, the automatic publishing approach is not an option.
+
+If you don't have to rely on plugins then you can work with new posts *direct in Github* - just create a new post and commit the change to automatically publish. This can be extremely handy if you're travelling, and don't want to have to bring your laptop with Git, Jekyll etc. 
+
+Which option you use then really depends on *convenience*. I have selected the automatic option, because I am the only one using the blog so there is no great value in simplifying the syntax. I also like the ability to make small changes very easily, without having to rebuild the site.
+
 
 # Other options: Octopress and the Jekyll Bootstrap
 
