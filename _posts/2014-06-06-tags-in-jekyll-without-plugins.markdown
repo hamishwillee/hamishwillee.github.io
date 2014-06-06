@@ -43,7 +43,7 @@ The tags can be accessed in pages and layouts using the [Liquid variable](http:/
 <div class="message"><b>Note: </b><i>site.tags</i> only includes the tags defined in <i>posts</i>, not <i>pages</i></div>
 
 
-## Tags index page
+# Tags index page
 
 Create a tags page for the index: <i>Tags.md</i>. The page needs two elements:
 
