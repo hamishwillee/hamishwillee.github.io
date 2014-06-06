@@ -13,7 +13,9 @@ This post shows how to support tags in jekyll without using plugins. This means 
 # Introduction 
 
 
-Jekyll has rudimentary support for tags. You can add tags to pages and specify how, if present, they are to displayed in your layouts. You can also list all tags that have been applied to all *posts* across the site. However there is no "standard" way to get and link to a list of all topics with a particular tag.
+Jekyll has rudimentary support for tags. You can add tags to pages and specify how, if present, they are to displayed in your layouts. You can also list all tags that have been applied to all *posts* across the site. 
+
+What isn't so obvious is how to get (and link to) a list of all topics with a particular tag.
 
 The [common approach](http://charliepark.org/tags-in-jekyll/) for supporting tags is to use a custom plugin to create a separate index page for each tag. Unfortunately this means that you can't use automatic publishing of your sources when you create a new post, because Github's version of Jekyll won't run custom plugins. Instead you will have to manually rebuild your sources and push the new site to the publishing repository.
 
@@ -59,21 +61,26 @@ Tags:
 
 <div class="message"><b>Note: </b>The second item in the array returned by iterating <i>site.tags</i> is the post content. Unfortunately this is particularly useless, as it contains all the text in all the articles that have the tag - but without any separators or titles. There is no way to just get the list of titles or the list of <b>post</b> objects using this variable.</div>
 
-To create the heading and anchor for each tag we again iterate the `site.tags'. Under each heading we iterate through all the site posts, listing only those which [contain](http://docs.shopify.com/themes/liquid-basics/contains) the current tag. 
+To create the heading and anchor for each tag we again iterate the `site.tags`. Under each heading we iterate through all the site posts, listing only those which [contain](http://docs.shopify.com/themes/liquid-basics/contains) the current tag. 
 
 {% highlight html %}
-{{ "{% for tagitem in site.tags " }}%} <!-- iterate through all tags on the site --> 
+<!-- iterate through all tags on the site --> 
+{{ "{% for tagitem in site.tags " }}%} 
 
-<div id="{{ "{{ tagitem[0] " }}}}">  <!-- for each tag, create an anchor by using the tag name as an id --> 
+<!-- for each tag, create an anchor by using the tag name as an id --> 
+<div id="{{ "{{ tagitem[0] " }}}}">  
 <h2> {{ "{{ tagitem[0] " }}}} </h2>  <!-- for create a heading --> 
 
  <ul> <!-- create the list of posts -->
- {{ "{% for post in site.posts " }}%}  <!-- iterate through all the posts on the site --> 
-      {{ "{% if post.tags contains tagitem[0] " }}%} <!-- list only those which contain the current tag -->
+ <!-- iterate through all the posts on the site --> 
+ {{ "{% for post in site.posts " }}%} 
+      <!-- list only those which contain the current tag --> 
+      {{ "{% if post.tags contains tagitem[0] " }}%} 
          
         <li>
-           <div class="tag-icon-image"> 
-             {{ "{% for tag in post.tags " }}%} <!-- iterate and list the tags for the current post -->
+           <div class="tag-icon-image">
+             <!-- iterate and list the tags for the current post --> 
+             {{ "{% for tag in post.tags " }}%} 
                 <div class="tag-link"><a href="#{{ "{{ tag " }}}}">{{ "{{ tag " }}}}</a></div> {{ "{% endfor " }}%}</div>
              {{ "{% endif " }}%} 
            </div>
@@ -95,12 +102,14 @@ Note that the code above also contains various HTML elements that are used for s
 The layouts need to be updated to automatically display tags if they are defined for the current page. This can be done in the **posts.html** layout near the heading. The tags are displayed by iterating the `page.tags` variable. Note below that in this case we link to **tags.html#current-anchor**.
 
 {% highlight html %}
-{{ "{% if page.tags != empty " }}%} <!-- only display tags "infrastructure" if there are tags -->
+<!-- only display tag "infrastructure" if there are tags -->
+{{ "{% if page.tags != empty " }}%} 
  <div class="tag-icon-image"> 
-    {{ "{%  for tag in page.tags  " }}%} <!-- iterate through tags in the current page using page.tags variable -->
+    <!-- iterate through tags in the current page using page.tags variable -->
+    {{ "{%  for tag in page.tags  " }}%} 
       <div class="tag-link">
        <!-- link to appropriate tag anchor in tags.html -->
-       <a href="{{ site.baseurl }}/tags#{{ "{{ tag " }}}}&tag={{ "{{  | uri_escape " }}}}">{{ "{{ tag " }}}}</a>
+       <a href="{{ site.baseurl }}/tags#{{ "{{ tag " }}}}">{{ "{{ tag " }}}}</a>
       </div> 
     {{ "{%  endfor " }}%}
  </div>
