@@ -19,9 +19,9 @@ What isn't so obvious is how to get (and link to) a list of all topics with a pa
 
 The [common approach](http://charliepark.org/tags-in-jekyll/) for supporting tags is to use a custom plugin to create a separate index page for each tag. Unfortunately this means that you can't use automatic publishing of your sources when you create a new post, because Github's version of Jekyll won't run custom plugins. Instead you will have to manually rebuild your sources and push the new site to the publishing repository.
 
-My alternative is to have a *single* index page with a separate heading, anchor and list of blog posts for each tag. Linking to the correct index from a tag is then as simple as opening the index page with the correct anchor.
+However there is no real necessity to have separate index files for each tag, which is why a plugin are needed. The alternative is to have a *single* index page with a separate heading, anchor and list of blog posts for each tag. Linking to the correct index from a tag is then as simple as opening the index page with the correct anchor.
 
-This approach is easy to implement, and since it does not use plugins, Github will automatically publish the updated index whenever you add a new post.
+This approach is easy to implement, and since it does not use plugins, Github will automatically publish the updated index whenever you add a new post. 
 
 # Adding tags to a page
 
