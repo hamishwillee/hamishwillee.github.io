@@ -12,13 +12,13 @@ This post shows how to build draft posts into the published version of a Jekyll 
 
 # Introduction
 
-Drafts are posts that aren't yet ready to be published. Jekyll's does not generate pages for draft posts by default, but instead provides a special build option to preview drafts. 
+Drafts are posts that aren't yet ready to be published. Jekyll's does not generate pages for draft posts by default, but instead provides a special preview build option. 
 
 In many cases draft posts are not *confidential*, the author simple doesn't wish to distract readers with incomplete ideas. It is therefore reasonable that drafts posts are generated in the site HTML, as long as they aren't obtrusive. 
 
 This post explains one approach for creating *public drafts*. The approach has the following benefits over Jekyll's [official support for drafts](#Standard Jekyll process for creating drafts):
 
-* Drafts can be previewed and shared with reviewers on the live site - there is no need for a separate build
+* Drafts can be previewed and shared with reviewers on the live site - there is no need for a separate build.
 * Published draft files do not need to be renamed or moved - you just need to remove the draft variable and add the current date variable. 
 * Bloggers using Github's inbuilt Jekyll publishing do not need a copy of Jekyll to preview posts.
 
@@ -91,7 +91,7 @@ Posts are automatically generated if they have the correct date-format in their 
 |   |-- YYYY-MM-DD-a-draft-post.md
 {% endhighlight %}
 
-You have to have a date, and when creating the draft you might as well use the current date in the filename. As you will see in the next section the date used for the post once it is published can be overridden in the frontmatter. 
+You must have a date, and when creating file there is no reason not to use the current draft-create date. As you will see in the next section, the date used for the post once it is published can be overridden in the frontmatter. 
 
 ## Publishing the post
 
@@ -105,6 +105,6 @@ The post will now appear in the main blog feeds and RSS, and will no longer have
 
 # Summary
 
-Publically publishing drafts but making them unobtrusive is easy to implement in Jekyll. Once implemented it is easier to preview and share previews for review on the live site. It is also easier to finally publish the post, because this is simply a change to the front-matter, rather than moving and renaming a file.
+Publically publishing drafts while making them unobtrusive is easy to implement. Once implemented you can preview drafts and and share drafts for review on the live site. It is also easier to finally publish a draft post, because this is simply a change to the front-matter (rather than moving and renaming a file).
 
 You can check out the [example draft post here]({% post_url 2014-06-05-Example-draft--blog %}), and link to other blogs through it's `draft` tag.
