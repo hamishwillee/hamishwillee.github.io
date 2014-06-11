@@ -2,7 +2,6 @@
 layout: post
 title:  "Example draft blog"
 tags:
-- jekyll
 - draft
 ---
 
