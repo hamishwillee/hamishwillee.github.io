@@ -5,7 +5,9 @@ title:  "Trello project management tools and burndown charts"
 author: Hamish Willee
 description: An overview of tools for making Trello more useful for Agile (and other) project management, focussing on "Plus for Trello".
 tags:
-- draft
+- trello
+- agile
+- project-management
 ---
 
 This post summarises my *superficial* recent exploration of tools that can make Trello more useful for project management. A more accurate title might be "Why [Plus for Trello](#plus-for-trello) is *awesome by design*" :-)
@@ -25,7 +27,7 @@ This post looks at the main options I found for adding time-tracking and burndow
 
 *Trello* is a web-based organisational tool, consisting of *boards*, containing *lists* of *cards* (cards have a title, description, due date, members, labels, checklists and comments/attachments). The cards and lists can be used to represent anything, but when you're organising a project, it makes sense for the cards to be tasks and the lists to represent states: Sprint Backlog, Development, Testing, Bug, Blocked, Done, etc). You can create boards, add cards, and move them to different lists. When you're done, you can archive or delete cards, and even boards.
 
-*Trello* gives you all this "out of the box" in the free version, along with quite a comprehensive API which you can use to query all aspects of boards, lists, cards and members. It does not give you the abiliy to export a board to CSV or similar, but since you can export to JSON (or query the information using the API) getting a human-usable form to manipulate is easy. If you upgrade to the (very reasonably priced [Trello Business Class](https://trello.com/business-class)) version you can export to CSV, and there are lots of other useful options primarily designed to make it easy to share boards within an organisation.
+*Trello* gives you all this "out of the box" in the free version, along with quite a comprehensive API which you can use to query all aspects of boards, lists, cards and members. It does not give you the ability to export a board to CSV or similar, but since you can export to JSON (or query the information using the API) getting a human-usable form to manipulate is easy. If you upgrade to the (very reasonably priced [Trello Business Class](https://trello.com/business-class)) version you can export to CSV, and there are lots of other useful options primarily designed to make it easy to share boards within an organisation.
 
 There is nothing inside *Trello* to help you plan or track your project effort, and there is no indicated that the *Trello* [backlog item for this functionality](https://trello.com/c/9tX8CRNm/1054-time-tracking) will be implemented (follow the link to find other useful time tracking tools). 
 
@@ -55,7 +57,7 @@ The solution allows you to view a burndown chart of the raw data points entered,
 
 ### The Good
 
-The really good things about this solution are that every change/record is recorded in a google drive spreadsheet (which can be shared with a team), and that the reporting function is so flexible. This compares well with other tools, in which the data is hidden, and in any case does not include information about who made the changes, and what exactly was done (a comment).
+The really good things about this solution are that every change/record is recorded in a Google Drive spreadsheet (which can be shared with a team), and that the reporting function is so flexible. This compares well with other tools, in which the data is hidden, and in any case does not include information about who made the changes, and what exactly was done (a comment).
 
 Reports can be created from the data to get both very high and very low levels of detail on how time was planned and used. If the inbuilt reports or charts are not sufficient, then the data can be exported and manipulated in Google drive or Excel. For billing, I can dump a report of exactly how I spent my time, and group it by day, week, or card.
 
@@ -74,7 +76,7 @@ Typically I've used the approach where a card is considered "finished" when it i
 
 The approach was very hard for me to get my head around - it feels like I'm losing my original estimates. The author (Zig Mandel) suggests that I am looking at it wrong - the estimate "E" is not the original estimate, it is the *current estimate*, and subject to change. The next version (3) of the plugin should make it possible to get reports showing the difference between time spent and the first estimate: that will solve my problem.
 
-If you've used other tools, you may well be used to changing the esimated/used time in the card title field. This is a habit to lose - *Plus* does this for you based on the values you enter in the card. If you're migrating to *Plus* I suggest you remove any values from the card title and re-enter them using the Plus entry box.
+If you've used other tools, you may well be used to changing the estimated/used time in the card title field. This is a habit to lose - *Plus* does this for you based on the values you enter in the card. If you're migrating to *Plus* I suggest you remove any values from the card title and re-enter them using the Plus entry box.
 
 
 ### The Ugly
