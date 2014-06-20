@@ -74,7 +74,9 @@ Other things I like about this tool:
 
 Typically I've used the approach where a card is considered "finished" when it is moved to the "Done" list, at which point the team can compare the consumed time to the original estimate and learn something about our estimating ability. In *Plus for Trello* a card is considered "Done" when the remaining time is zero, so if you finish the work for a card, you should then change the estimate so that the remaining time is zero. 
 
-The approach was very hard for me to get my head around - it feels like I'm losing my original estimates. The author (Zig Mandel) suggests that I am looking at it wrong - the estimate "E" is not the original estimate, it is the *current estimate*, and subject to change. The next version (3) of the plugin should make it possible to get reports showing the difference between time spent and the first estimate: that will solve my problem.
+The approach was very hard for me to get my head around - it feels like I'm losing my original estimates. The author (Zig Mandel) suggests that I am looking at it wrong - the estimate "E" is not the original estimate, it is the *current estimate*, and subject to change. 
+
+This can be handled by making a report where `E.type=NEW` to get original estimates, which you can subtract from the current estimates by not filtering against E.type. If this sounds confusing, that is because I'm trying to paraphrase instructions I haven't tried :-) The author tells me the next version of the plugin (3) should make this a lot easier.
 
 If you've used other tools, you may well be used to changing the estimated/used time in the card title field. This is a habit to lose - *Plus* does this for you based on the values you enter in the card. If you're migrating to *Plus* I suggest you remove any values from the card title and re-enter them using the Plus entry box.
 
