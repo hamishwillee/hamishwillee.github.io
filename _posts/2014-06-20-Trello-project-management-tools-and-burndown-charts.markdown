@@ -85,19 +85,15 @@ If you've used other tools, you may well be used to changing the estimated/used 
 
 ### The Ugly
 
-The version I am using is graphically a little shabby, and has some usability issues. Persevere - the author is iterating it very fast and I'm sure that all my problems and any you have will be fixed quickly.
+There isn't really anything very ugly about this tool!
 
-When I first installed the plugin it wasn't clear to me how to enter my time spent on a card. I could see S and E labels, a comment field, and a submit button. I looked at the documentation and it looked like I entered the S (submitted/used time) and the E (estimated time) and the comment using a syntax like:  "*S*/*E* my comment" (where S, E are real numbers). The problem was that whatever syntax I entered into the comment field the time recorded was zero. 
+I did have a few problems when I started, but half of these were caused by ignoring the instructions to remove the *Scrum for Trello* extension; most of the other small problems were fixed by the developer in the first few days. 
 
-The problem turned out to be that the "S" and "E" labels are actually fields for entering the values. Yes, perhaps I'm a bit thick, but when I see a solid bordered box with a filled colour and a solid-font character I think "label". I expect fields for data entry to contain character text that is italic and/or light grey in colour.
+There are a few minor things which are likely to be improved in future releases:
 
-There are lots of other minor issues. For example, you access the reports and charts from the tool's hourglass icon in the Chrome taskbar. I was looking for this information in *Trello* itself in the board headings. Now the right way to do this is documented, but it would be better if the links were in the most obvious place. 
-
-The burndown report produced by the tool is truly ugly - it is basically a graph of the stored data points. The good news is that you don't have to share this chart with your customer or management - it is simple to export the data to Excel and use its very powerful graphing functionality.
-
-A minor point, but the reporting function does not have the ability to filter based on "Trello list". So for example, you can't list all time for cards that are "in testing". 
-
-Lastly, I use Chrome and Firefox about equally. It would be really nice if there was a Firefox version of this extension.
+* The burndown report produced by the tool is truly ugly - it is basically a graph of the stored data points. The good news is that you don't have to share this chart with your customer or management - it is simple to export the data to Excel and use its very powerful graphing functionality.
+* The reporting function does not have the ability to filter based on "Trello list". So for example, you can't list all time for cards that are "in testing". 
+* I use Chrome and Firefox about equally. It would be really nice if there was a Firefox version of this extension.
 
 
 # Other tools
