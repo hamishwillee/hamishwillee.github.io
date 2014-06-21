@@ -46,8 +46,7 @@ While some tips are arguable, both blogs contain a lot of "common sense". They a
 
 # Plus for Trello 
 
- 
-[Plus for Trello](https://chrome.google.com/webstore/detail/plus-for-trello/gjjpophepkbhejnglcmkdnncmaanojkf?hl=en) is *Chrome-only* browser extension for tracking time spent by card, list, board and user. It is also free, open source, well supported. It is the best tool I have found (so far) for supporting time estimation and tracking on *Trello*.
+[Plus for Trello](https://chrome.google.com/webstore/detail/plus-for-trello/gjjpophepkbhejnglcmkdnncmaanojkf?hl=en) is *Chrome-only* browser extension for tracking time spent by card, list, board and user. It is also free, open source, and well supported. It is the best tool I have found (so far) for supporting time estimation and tracking on *Trello*.
 
 The extension adds card fields in which users can enter the amount of time they have just spent on the task, a re-estimate of how much more/less time will be required (than previously estimated), and/or a comment. Once entered, the new values are automatically added to the total times in the card title (in <a href="#scrum-for-trello">Scrum for Trello</a> format).
 
@@ -69,6 +68,8 @@ Other things I like about this tool:
 * There is good documentation on how to migrate if you've used other systems
 * Lots more - check out the release notes when you download the plugin.
 
+<div class="message"><b>Warning: </b>If installed, please disable [Scrum for Trello](#scrum-for-trello). The functionality provided by this plugin is included by *Plus for Trello*.</div>
+
 
 ### The Bad (or to be precise, confusing)
 
@@ -83,7 +84,7 @@ If you've used other tools, you may well be used to changing the estimated/used 
 
 ### The Ugly
 
-The version I am using is graphically a little shabby, and has some usability issues. Persevere!
+The version I am using is graphically a little shabby, and has some usability issues. Persevere - the author is iterating it very fast and I'm sure that all my problems and any you have will be fixed quickly.
 
 When I first installed the plugin it wasn't clear to me how to enter my time spent on a card. I could see S and E labels, a comment field, and a submit button. I looked at the documentation and it looked like I entered the S (submitted/used time) and the E (estimated time) and the comment using a syntax like:  "*S*/*E* my comment" (where S, E are real numbers). The problem was that whatever syntax I entered into the comment field the time recorded was zero. 
 
@@ -104,7 +105,7 @@ Lastly, I use Chrome and Firefox about equally. It would be really nice if there
 
 [Scrum for Trello](http://scrumfortrello.com/) is a browser plugin (for Firefox, Chrome, Safari) that allows users to add time estimates and time spent directly to *Trello* cards. Estimated time is entered into the card title as a real number surrounded by round brackets, while consumed time is represented as a number surrounded by square brackets. The plugin then displays these values below the card title (and does not display them in the title). It also displays the sum of all the time estimated/consumed in each list.
 
-The plugin itself does not provide any easy way to extract or graph the entered information, but is used by all the other tools in this post in order to do so. Note *Plus for Trello* updates the title on its users' behalf.
+The plugin itself does not provide any easy way to extract or graph the entered information. Note *Plus for Trello* uses the same format for recording the card time totals, but updates the title on its users' behalf.
 
 ## Burndown for Trello
 
