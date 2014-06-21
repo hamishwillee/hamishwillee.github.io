@@ -54,6 +54,9 @@ Users can generate filtered historical reports of any of these transactions, and
 
 The solution allows you to view a burndown chart of the raw data points entered, view cards that are still "in progress", and drill down into the effort spent by each team member.
 
+<div class="message"><b>Warning: </b>If installed, please disable <a href="#scrum-for-trello">Scrum for Trello</a>. The functionality provided by this plugin is included by *Plus for Trello*.</div>
+
+
 ### The Good
 
 The really good things about this solution are that every change/record is recorded in a Google Drive spreadsheet (which can be shared with a team), and that the reporting function is so flexible. This compares well with other tools, in which the data is hidden, and in any case does not include information about who made the changes, and what exactly was done (a comment).
@@ -67,8 +70,6 @@ Other things I like about this tool:
 * The tool author is very responsive to questions
 * There is good documentation on how to migrate if you've used other systems
 * Lots more - check out the release notes when you download the plugin.
-
-<div class="message"><b>Warning: </b>If installed, please disable [Scrum for Trello](#scrum-for-trello). The functionality provided by this plugin is included by *Plus for Trello*.</div>
 
 
 ### The Bad (or to be precise, confusing)
