@@ -54,7 +54,7 @@ Users can generate filtered historical reports of any of these transactions, and
 
 The solution allows you to view a burndown chart of the raw data points entered, view cards that are still "in progress", and drill down into the effort spent by each team member.
 
-<div class="message"><b>Warning: </b>If installed, please disable <a href="#scrum-for-trello">Scrum for Trello</a>. The functionality provided by this plugin is included by *Plus for Trello*.</div>
+<div class="message"><b>Warning: </b>If installed, please disable <a href="#scrum-for-trello">Scrum for Trello</a>. It does not "play nice" with <i>Plus for Trello</i>.</div>
 
 
 ### The Good
