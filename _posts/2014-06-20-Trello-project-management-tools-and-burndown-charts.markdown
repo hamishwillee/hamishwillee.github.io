@@ -16,7 +16,7 @@ This post summarises my *superficial* recent exploration of tools that can make 
 
 A friend recently suggested we use [Trello](https://trello.com/) to share our learning and work tasks. For those who are not familiar with *Trello* , it is a web-based organisational tool that is intended to help users "Organize anything, together". 
 
-This sounded like a great idea: we'd encourage each other as we worked through the tasks, while at the same time learning more about what has become a popular tool in the Agile/Scrum community. 
+This sounded like a great idea; we'd encourage each other as we worked through the tasks, while at the same time learning more about what has become a popular tool in the Agile/Scrum community. 
 
 After a few weeks I concluded *Trello* makes a great "to-do list", but I couldn't see why it is so popular as a *project management tool*. Project managers need to be able to track actual effort against planned effort, but *Trello*  doesn't support these concepts. As a result, there was also no mechanism for getting burn-down charts or for exporting detailed information about time spent (which I find useful for billing).
 
