@@ -1,8 +1,12 @@
-<!-- Search bar script from http://truongtx.me/2012/12/28/jekyll-create-simple-search-box/
+<!-- Search bar script using bootstrap 3 styles. -->
 
---><form onsubmit="my_search_google()" class="masthead-search">
-  <input type="search" id="searchbox" placeholder="search">
+<form class="navbar-form navbar-right" role="search">
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Search" id="searchbox" onsubmit="my_search_google()">
+	</div>
+	<button type="submit" class="btn btn-default" onclick="my_search_google()">Submit</button>
 </form>
+
 <script language="Javascript" type="text/javascript">
   function my_search_google()
   {
@@ -10,28 +14,4 @@
     window.open("http://google.com/search?q=" + query
 	+ "%20site:" + "{{ site.url }}");
   }
-</script><!-- 
-Search bar script
-This version from google: https://www.google.com/cse/create/new
-
-Copy the following code, and paste it into a <div> element in your site's <body> section, where you want both of the search box and the search results to render.
-
-Note: For the most cross-browser compatibility, it is recommended that your HTML pages use a supported doctype such as <!DOCTYPE html>. CSS hover effects require a supported doctype.
-
-Includes twitter share, Google+ share this
-Note, actual code to share these in post.html
-<script>
-  (function() {
-    var cx = '018052806301214587834:omzgwwbbocw';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
 </script>
-<gcse:search></gcse:search>
-
--->

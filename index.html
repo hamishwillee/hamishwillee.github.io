@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Home
 ---
 
@@ -16,11 +16,10 @@ title: Home
 
 {% for post in site.posts limit:5 %}
    {% if post.tags contains 'draft' %}<!--do nothing -->{% else %}
-  
 
       <div class="post-block">
          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><span class="small-post-date"> - {{ post.date | date: "%b %-d, %Y" }}</span>
-         {% if post.tags != empty %} <div class="tag-icon-image"> {% for tag in post.tags %} <div class="tag-link"><a href="{{ site.baseurl }}/tags#{{ tag }}&tag={{ tag | uri_escape }}">{{ tag }}</a></div> {% endfor %}</div>{% endif %} 
+         {% if post.tags != empty %} <div class="tag-icon-image"> {% for tag in post.tags %} <small><a href="{{ site.baseurl }}/tags#{{ tag }}&tag={{ tag | uri_escape }}">{{ tag }}</a></small> {% endfor %}</div>{% endif %} 
          <div class="post-excerpt">{{ post.excerpt }}</div>
       </div> 
 

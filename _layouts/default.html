@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html>
+<html lang="en">
 
   {% include head.html %}
 
-  <body>
+    <body>
 
-    <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a></h3>
-{% for page in site.pages_list %}
-  &nbsp;&nbsp;&nbsp;
-  <small><a href="{{ page[1]  }}">{{ page[0] }}</a></small> 
-{% endfor %}{% include search_box_scripts.html %}
-        
-      </div>
+    {% include header.html %}
 
+    <div class="container">
       {{ content }}
+    </div> <!-- /container -->
 
-      <div class="footer">
-        <p>
-          
-<a href="https://twitter.com/{{ site.username }}" title="Twitter feed"><img alt="Twitter" src="/images/Twitter_logo_blue.png" width="16px"></img></a><a href="https://github.com/{{ site.username }}" title="Github page"><img alt="Github" src="/images/GitHub-Mark-32px.png" width="16px"></img></a>
-<a href="https://plus.google.com/103662188789853792412/posts"><img alt="Google+" src="/images/googleplus_icon.png" width="16px"></img></a>
-<a href="http://au.linkedin.com/in/hamishwillee" title="Linkedin profile"><img alt="Linkedin" src="/images/Linkedin-InBug-16px_0.png" width="16px"></img></a>
-<a href="/feed.xml" title="RSS feed"><img alt="rss" src="/images/rss.png" width="16px"></img></a>
-<a href="mailto:{{ site.email }}?Subject={{'About page: ' | UrlEncode }}{{ page.title | UrlEncode }}&body={{'URL: '| UrlEncode }}{{site.url }}{{ page.url }}" title="Email me"><img alt="email" src="/images/email-icon.png" width="16px"></img></a>
-<a href="{{ site.bugreports }}?title={{'Bug in page: ' | UrlEncode }}{{ page.title | UrlEncode }}&body={{'REPLACE THIS TEXT WITH BUG DESCRIPTION %0A%0AURL: '| UrlEncode }}{{site.url }}{{ page.url }}&labels=bug" title="Report bug in page"><img alt="email" src="/images/bug-icon.png" width="16px"></a>
-&nbsp;&nbsp;{{ site.copyright }}</p>
-      </div>
-    </div>
-  {% include google_analytics_scripts.html %}
-  </body>
+
+    {% include footer.html %}
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Bootstrap CDN Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+
+	{% include google_analytics_scripts.html %}
+    </body>
 </html>
-
-
 
