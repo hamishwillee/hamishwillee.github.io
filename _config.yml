@@ -27,7 +27,7 @@ github:
 
 
 pages_list:       
-  About: '/about'
+  About: '/about/'
   Blogs: '/blog/'
   Twitter: 'http://twitter.com/hamishwillee'
   Feed: '/rss.xml'
@@ -42,5 +42,8 @@ beer: relatedpostsdisabled, but could perhaps do something with tags.
 # Deprecated
 # tagline:          ""
 
+
+sass:
+    sass_dir: /source/assets/bower_components/bootstrap-sass-official/assets/stylesheets
 
 

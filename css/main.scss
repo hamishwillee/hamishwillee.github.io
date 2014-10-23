@@ -1,3 +1,13 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+$light-orange: #ff8c00;
+$navbar-default-bg: $light-orange;
+
+@import "bootstrap";
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
