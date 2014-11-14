@@ -137,7 +137,7 @@ First the function block is run within a ```capture``` block with the full TOC. 
 
 Use the [split](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#standard-filters) function to split up a string to create an array. This approach is used above to turn the folder names list into an array/list so that it can be iterated.
 
-### Comments, space and newlines in functions are part of the output. 
+#### Comments, space and newlines in functions are part of the output. 
 
 Whatever code or comments, or even whitespace you put in a function will become part of the output HTML. Often this is fine, but if you want to further parse the content, this can result in unpredictable output. 
 
