@@ -21,13 +21,22 @@ What may not be obvious at first glance is that you can use Jekylls [includes](h
 
 ## How does it work?
 
-"Functions" are defined as (html) files in the site **_includes** directory (or a subdirectory of that folder). You call the function to include the contents of the file using the ```include``` tag as shown:
+### Creating the function
+
+"Functions" are simply files, typically with the extension **.html**, in the site **_includes** directory (or a subdirectory of that folder). These can contain any HTML, markup, or [Liquid code](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers).
+
+### Calling the function
+
+You call the function to include the contents of the file using the ```include``` tag as shown:
 
 {% highlight liquid %}
 {% raw %}
 {% include your_function.html %}
 {% endraw %}
 {% endhighlight %}
+
+
+### Passing in parameters
 
 If you need to pass in parameters you can do that too. The fragment below shows how you might pass in a string ```"a value"``` and a variable ```variable_name```.
 
@@ -39,8 +48,15 @@ If you need to pass in parameters you can do that too. The fragment below shows 
 
 Within the file you can access those parameters using ```{% raw %}{{ include.some_parameter }}{% endraw %}``` and ```{% raw %}{{ include.another_parameter }}{% endraw %}``` respectively.
 
+<div class="alert alert-success" role="alert"><p>The parameters can be considered to be static const - they can't be changed within the function and you can't use them to return values.</p></div>
 
-The "return value" of the function is whatever text *or variables* you output. Typically if you need to use the result of one function in another you can use the [Liquid capture tag](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#variable-assignment) to assign the result of the first function to a variable, which you then pass as a parameter to the second function.
+### Return values
+
+The "return value" of the function is whatever text you output, i.e. a string. 
+
+Sometimes you will want to further process the output of a function. In this case you can use the [Liquid capture tag](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#variable-assignment) to assign the result of the function to a variable, and then run standard filters on it.
+
+<div class="alert alert-success" role="alert"><p>You cannot return an "array" or any other variable than a string.</p> <p>If you need to do so, then convert the variable into some string format that you can then capture and reconvert into variable in the caller. </p></div>
 
 
 ## A real example
@@ -117,8 +133,31 @@ First the function block is run within a ```capture``` block with the full TOC. 
 
 ## Tips
 
-1. *Liquid* does not provide tags to allow you to dynamically build arrays. You can however use the [split](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#standard-filters) function to split up a string to create an array. This approach is used above to turn the folder names list into an array/list so that it can be iterated.
-1. The liquid templates preserve whatever space and newlines you have in their declaration, which means that output HTML can often be full of lines and odd indentation. One solution is to remove all space in your code, but this makes it hard to read. A better approach is to strip off the newlines using the function, as I have done above.
+#### *Liquid* does not provide tags to allow you to dynamically build arrays. 
+
+Use the [split](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers#standard-filters) function to split up a string to create an array. This approach is used above to turn the folder names list into an array/list so that it can be iterated.
+
+### Comments, space and newlines in functions are part of the output. 
+
+Whatever code or comments, or even whitespace you put in a function will become part of the output HTML. Often this is fine, but if you want to further parse the content, this can result in unpredictable output. 
+
+In functions where it matters omit all comments, left align all the rows, and remove spaces. You will still have line breaks, but these can be stripped using a filter.
+
+
+#### strip_html just removes the tags
+
+Stripping HTML removes the tags, but not the contained content. Unfortunately you can't use HTML stripping to remove comments before displaying your function output!
+
+#### Parameters are "static const"
+
+Parameters passed into a function (```include.param```) cannot be modified in the function. 
+
+
+#### Scope is unclear - reset your temporaries
+
+The scope of variables is a little unclear to me. I've found it "good practice" to reset temporary variables used in my functions before using them.
+
+
 
 ## Summary
 
