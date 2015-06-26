@@ -131,6 +131,13 @@ This approach has the benefit that you can define exactly what information you w
 
 The API does appear to [support extracting historical data](http://stackoverflow.com/questions/9812453/trello-api-determine-when-a-card-changed-lists) so a more advanced sheet/web app might get time spent/estimated data direct from *Trello* rather than by building it up by taking snapshots over time. This approach could be useful for generating a historical view of a project which was not started using any of the other tools. 
 
+## Screenful for Trello
+
+[Screenful for Trello](http://www.screenful.me/screenful-for-trello/) is a dashboard for supporting agile development in Trello. It is intended to be displayed on a large monitor as an "information radiator" in the office.  
+
+I haven't used this tool personally, but it does look like it might be useful in an office environment.
+
+*2015-06-26: Created this section.*
 
 # Summary
 
